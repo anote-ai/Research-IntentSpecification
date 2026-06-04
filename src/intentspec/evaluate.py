@@ -35,6 +35,53 @@ def score_syntactic(predicted: "ToolCall", reference: "ToolCall") -> float:
     return 0.5 * name_match + 0.5 * key_jaccard
 
 
+def constraint_satisfaction_rate(spec: "IntentSpec", call: "ToolCall") -> float:
+    """Fraction of constraints in *spec* that are addressed in call rationale.
+
+    Each constraint is considered satisfied when its lowercased text appears
+    as a substring of the lowercased rationale.  Returns 1.0 when there are
+    no constraints (vacuously satisfied).
+    """
+    if not spec.constraints:
+        return 1.0
+    rationale_lower = call.rationale.lower()
+    satisfied = sum(
+        1 for c in spec.constraints if c.lower() in rationale_lower
+    )
+    return satisfied / len(spec.constraints)
+
+
+def ambiguity_resolution_score(spec: "IntentSpec", call: "ToolCall") -> float:
+    """Measure how well the agent resolved ambiguities listed in *spec*.
+
+    Score = fraction of spec.ambiguities whose lowercased text appears in
+    either the call rationale or the call clarifications list.  When
+    spec.ambiguity_level == 0.0 and there are no ambiguities the score is
+    1.0 (nothing to resolve).  When ambiguity_level is high but nothing is
+    resolved the score is penalised proportionally.
+    """
+    if not spec.ambiguities and spec.ambiguity_level == 0.0:
+        return 1.0
+
+    if not spec.ambiguities:
+        # Ambiguity level is set but no concrete ambiguities listed;
+        # penalise by ambiguity_level if no clarifications were provided.
+        if call.clarifications:
+            return max(0.0, 1.0 - spec.ambiguity_level * 0.5)
+        return max(0.0, 1.0 - spec.ambiguity_level)
+
+    rationale_lower = call.rationale.lower()
+    clarifications_lower = " ".join(call.clarifications).lower()
+    searchable = rationale_lower + " " + clarifications_lower
+    resolved = sum(
+        1 for a in spec.ambiguities if a.lower() in searchable
+    )
+    base = resolved / len(spec.ambiguities)
+    # Small bonus for providing explicit clarifications
+    clarification_bonus = min(0.1, 0.05 * len(call.clarifications))
+    return min(1.0, base + clarification_bonus)
+
+
 def compare_scores(
     intent_scores: list[float],
     syntactic_scores: list[float],
@@ -67,18 +114,27 @@ def divergence_analysis(records: list["EvalRecord"]) -> dict:
     """Summary statistics over a list of EvalRecord objects."""
     if not records:
         return {
-            "mean_intent": 0.0, "mean_syntactic": 0.0,
-            "mean_divergence": 0.0, "max_divergence": 0.0, "overstatement_rate": 0.0,
+            "mean_intent": 0.0,
+            "mean_syntactic": 0.0,
+            "mean_divergence": 0.0,
+            "max_divergence": 0.0,
+            "overstatement_rate": 0.0,
+            "mean_constraint_sat_rate": 0.0,
+            "mean_ambiguity_res_score": 0.0,
         }
     n = len(records)
     intent_scores = [r.intent_score for r in records]
     syntactic_scores = [r.syntactic_score for r in records]
     divergences = [r.divergence for r in records]
     overstatements = sum(1 for r in records if r.syntactic_score > r.intent_score)
+    csr_scores = [r.constraint_sat_rate for r in records]
+    ars_scores = [r.ambiguity_res_score for r in records]
     return {
         "mean_intent": sum(intent_scores) / n,
         "mean_syntactic": sum(syntactic_scores) / n,
         "mean_divergence": sum(divergences) / n,
         "max_divergence": max(divergences),
         "overstatement_rate": overstatements / n,
+        "mean_constraint_sat_rate": sum(csr_scores) / n,
+        "mean_ambiguity_res_score": sum(ars_scores) / n,
     }
