@@ -7,10 +7,10 @@ def make_intent_spec(
     n_constraints: int = 2,
 ) -> IntentSpec:
     constraints = [
-        f"must use authorized data sources",
-        f"must return structured JSON output",
-        f"must complete within 5 seconds",
-        f"must handle missing values gracefully",
+        "must use authorized data sources",
+        "must return structured JSON output",
+        "must complete within 5 seconds",
+        "must handle missing values gracefully",
     ][:n_constraints]
     return IntentSpec(
         goal=goal,
@@ -48,7 +48,6 @@ def make_eval_dataset(
             n_constraints=2,
         )
         reference = make_tool_call(tool_name="query_database", match_spec=True)
-        # Alternate between good and poor predictions
         predicted = make_tool_call(
             tool_name="query_database" if i % 2 == 0 else "wrong_tool",
             match_spec=(i % 2 == 0),
