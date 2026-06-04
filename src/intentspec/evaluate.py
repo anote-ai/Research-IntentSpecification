@@ -10,14 +10,12 @@ def score_intent_alignment(spec: "IntentSpec", call: "ToolCall") -> float:
     """Fraction of spec.constraints found in call.rationale + bonus for success_criteria."""
     rationale_lower = call.rationale.lower()
     if not spec.constraints:
-        matched = 0
-        total = 1
+        base = 1.0
     else:
         matched = sum(
             1 for c in spec.constraints if c.lower() in rationale_lower
         )
-        total = len(spec.constraints)
-    base = matched / total
+        base = matched / len(spec.constraints)
     # Bonus if success_criteria keyword found (up to 0.2 extra, capped at 1.0)
     bonus = 0.0
     if spec.success_criteria and spec.success_criteria.lower() in rationale_lower:
