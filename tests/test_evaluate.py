@@ -1,7 +1,5 @@
 """Tests for intentspec.evaluate."""
 
-import math
-
 import pytest
 
 from intentspec.core import IntentSpec, ToolCall
