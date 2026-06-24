@@ -4,8 +4,6 @@
 
 Solve the **specification gap** in AI-assisted software engineering: prove that current LLMs interpret ambiguous specifications in ways that satisfy test suites but violate developer intent in 25–40% of cases, and deliver **IntentBench** plus a **specification quality scorer** that enables developers to detect and resolve ambiguities before code is generated, reducing rework by ≥50%.
 
-> **TODO**: The 25–40% and ≥50% figures are inherited from the original 5-type, holistic-judgment design. Revisit once constraint-based IVR is implemented on the narrowed (algorithm + data transformation) scope.
-
 ---
 
 ## Problem Statement & Novelty
