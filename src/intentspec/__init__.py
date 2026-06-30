@@ -1,25 +1,23 @@
-"""IntentSpec: Intent-aligned evaluation of LLM tool-use beyond syntactic matching."""
-from .core import IntentSpec, ToolCall, EvalRecord, IntentEvaluator, ConstraintTracker
-from .evaluate import (
-    score_intent_alignment,
-    score_syntactic,
-    constraint_satisfaction_rate,
-    ambiguity_resolution_score,
-    compare_scores,
-    divergence_analysis,
-)
+"""IntentSpec: Execution-based Intent Violation Rate measurement for LLM code generation."""
 
-__version__ = "0.1.0"
+from .schema import ConstraintTest, IVRResult, SpecPair, SolutionResult
+from .dataset import load_spec_pairs
+from .execute import evaluate_solution, run_solution
+from .ivr import compute_ivr, compute_ivr_by_type
+
+__version__ = "0.2.0"
 __all__ = [
-    "IntentSpec",
-    "ToolCall",
-    "EvalRecord",
-    "IntentEvaluator",
-    "ConstraintTracker",
-    "score_intent_alignment",
-    "score_syntactic",
-    "constraint_satisfaction_rate",
-    "ambiguity_resolution_score",
-    "compare_scores",
-    "divergence_analysis",
+    # schema
+    "ConstraintTest",
+    "SpecPair",
+    "SolutionResult",
+    "IVRResult",
+    # dataset
+    "load_spec_pairs",
+    # execute
+    "run_solution",
+    "evaluate_solution",
+    # ivr
+    "compute_ivr",
+    "compute_ivr_by_type",
 ]

@@ -6,111 +6,64 @@
 
 ## Abstract
 
-Syntactic benchmarks for LLM tool-use evaluate whether an agent selects the correct function name and argument keys — but they cannot detect when an agent produces a syntactically correct call that violates the user's actual intent. IntentSpec introduces a structured intent specification format and a dual-score evaluation protocol that separately measures *syntactic accuracy* and *intent alignment*, quantifying the divergence between the two.
-
-This divergence metric reveals cases where syntactic evaluation overstates agent capability: an agent may match the expected tool call exactly while ignoring safety constraints, user preferences, or contextual success criteria. IntentSpec provides a lightweight, reproducible evaluation library that requires no external APIs and is designed to integrate into existing CI pipelines.
-
-## Why Intent Specification Matters
-
-```
-User Goal
-    |
-    v
-+-------------------------+
-| IntentSpec              |
-|  goal: "..."            |
-|  constraints: [...]     |
-|  success_criteria: "..."|
-|  ambiguity_level: 0.2   |
-+-------------------------+
-    |              |
-    v              v
- Syntactic      Intent
-  Score         Score
-  (0..1)        (0..1)
-    |              |
-    +------+-------+
-           |
-           v
-      Divergence
-  (overstatement risk)
-```
-
-When `syntactic_score >> intent_score`, a syntactic-only benchmark would *overstate* agent quality. IntentSpec surfaces this gap.
+IntentSpec introduces **Intent Violation Rate (IVR)**: a metric that measures how often LLM-generated code passes the tests a developer explicitly stated while failing hidden gold-constraint tests derived from a fully-clarified version of the same specification. Given an ambiguous prompt, a gold clarified prompt, and a set of atomic constraint tests (some stated, some hidden), IVR is the fraction of solutions that satisfy the stated tests yet violate at least one hidden constraint — quantifying the gap between test-pass rate and true developer intent. The pipeline generates solutions via the Anthropic API, executes each candidate against stated and hidden tests in a sandboxed subprocess, and reports IVR overall and by specification type (algorithm vs. data transformation).
 
 ## Quick Start
 
 ```bash
 pip install -e ".[dev]"
-python scripts/run_eval.py
+# set ANTHROPIC_API_KEY in your environment
+python scripts/run_experiment1.py
 ```
 
-```python
-from intentspec.core import IntentSpec, ToolCall, IntentEvaluator
+## Pipeline
 
-spec = IntentSpec(
-    goal="Retrieve quarterly revenue data",
-    constraints=["must use authorized data sources", "must return JSON"],
-    success_criteria="returns structured data",
-    ambiguity_level=0.1,
-)
-
-predicted = ToolCall(
-    tool_name="query_database",
-    arguments={"table": "revenue", "format": "json"},
-    rationale="Using authorized data sources to return structured data as JSON",
-)
-reference = ToolCall(
-    tool_name="query_database",
-    arguments={"table": "revenue", "quarter": "Q1", "format": "json"},
-)
-
-evaluator = IntentEvaluator()
-record = evaluator.evaluate(spec, predicted, reference)
-print(f"intent={record.intent_score:.3f} syntactic={record.syntactic_score:.3f} divergence={record.divergence:.3f}")
+```
+data/specs/spec_pairs.jsonl          ANTHROPIC_API_KEY
+        |                                   |
+        v                                   v
+  load_spec_pairs()          generate_solutions() → data/generations/{task_id}.jsonl
+        |                                   |
+        +------------------+----------------+
+                           |
+                           v
+                  evaluate_solution()      ← subprocess execution, 5s timeout
+                    (stated tests + hidden constraint tests)
+                           |
+                           v
+                    compute_ivr()          ← IVR = violating / passing_stated
+                    compute_ivr_by_type()
+                           |
+                           v
+                  results/experiment1.json
 ```
 
-## IntentSpec JSON Format
+## JSONL Schema (`data/specs/spec_pairs.jsonl`)
 
 ```json
 {
-  "goal": "Retrieve quarterly revenue data for analysis",
+  "task_id": "HE_001",
+  "spec_type": "algorithm",
+  "ambiguous_prompt": "Sort a list.",
+  "gold_prompt": "Sort ascending, preserve duplicates, do not mutate input, handle empty.",
   "constraints": [
-    "must use authorized data sources",
-    "must return structured JSON output"
+    {"id": "C1", "description": "Sorted ascending", "test_code": "assert solution([2,1])==[1,2]"},
+    {"id": "C2", "description": "No mutation",      "test_code": "inp=[2,1];solution(inp);assert inp==[2,1]"}
   ],
-  "success_criteria": "returns structured data",
-  "ambiguity_level": 0.2
+  "stated_test_ids": ["C1"],
+  "hidden_test_ids": ["C2"]
 }
 ```
 
-## Evaluation Output Example
+## Target Venue
 
-```
-Evaluated 10 records.
-  [0] intent=1.00 syntactic=1.00 divergence=0.000
-  [1] intent=0.00 syntactic=0.25 divergence=0.250
-  [2] intent=1.00 syntactic=1.00 divergence=0.000
-  ...
-
-Divergence Analysis:
-  mean_intent: 0.500
-  mean_syntactic: 0.625
-  mean_divergence: 0.125
-  max_divergence: 0.250
-  overstatement_rate: 0.500
-```
-
-## Target Venues
-
-- EACL 2027 (European Chapter of the ACL)
-- AAAI 2027 Workshop on Enterprise AI Evaluation
+EACL 2027 main track (short methodology paper).
 
 ## Citation
 
 ```bibtex
 @misc{intentspec2026,
-  title        = {IntentSpec: Beyond Syntactic Matching in LLM Tool-Use Evaluation},
+  title        = {IntentSpec: Measuring Intent Violation Rate in LLM Code Generation},
   author       = {Anote AI Research},
   year         = {2026},
   howpublished = {\url{https://github.com/anote-ai/research-intentspecification}},

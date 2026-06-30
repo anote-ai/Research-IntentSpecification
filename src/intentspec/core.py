@@ -1,13 +1,13 @@
-from __future__ import annotations
-from pydantic import BaseModel, Field, field_validator
-from typing import Any
+# DEPRECATED: System A (tool-call rationale/syntactic divergence scoring).
+# This file is retained only so that any external code that imported from it
+# does not break with an ImportError. All active research code uses the
+# System B modules: schema.py, dataset.py, generate.py, execute.py, ivr.py.
+#
+# Do not add new functionality here.
 
-from .evaluate import (
-    score_intent_alignment,
-    score_syntactic,
-    constraint_satisfaction_rate,
-    ambiguity_resolution_score,
-)
+from __future__ import annotations
+from typing import Any
+from pydantic import BaseModel, Field, field_validator
 
 
 class IntentSpec(BaseModel):
@@ -15,7 +15,6 @@ class IntentSpec(BaseModel):
     constraints: list[str] = Field(default_factory=list)
     success_criteria: str = ""
     ambiguity_level: float = 0.0
-    # Optional: clarification questions the agent should resolve
     ambiguities: list[str] = Field(default_factory=list)
 
     @field_validator("ambiguity_level")
@@ -30,22 +29,16 @@ class ToolCall(BaseModel):
     tool_name: str
     arguments: dict[str, Any] = Field(default_factory=dict)
     rationale: str = ""
-    # Clarifications the agent provided before making the call
     clarifications: list[str] = Field(default_factory=list)
 
 
 class ConstraintTracker(BaseModel):
-    """Tracks which constraints from a spec were satisfied by a tool call."""
-
     spec: IntentSpec
     call: ToolCall
 
     def satisfied_constraints(self) -> list[str]:
         rationale_lower = self.call.rationale.lower()
-        return [
-            c for c in self.spec.constraints
-            if c.lower() in rationale_lower
-        ]
+        return [c for c in self.spec.constraints if c.lower() in rationale_lower]
 
     def unsatisfied_constraints(self) -> list[str]:
         satisfied = set(self.satisfied_constraints())
@@ -72,24 +65,21 @@ class EvalRecord(BaseModel):
 
 
 class IntentEvaluator:
-    def evaluate(
-        self,
-        spec: IntentSpec,
-        predicted: ToolCall,
-        reference: ToolCall,
-    ) -> EvalRecord:
-        i_score = score_intent_alignment(spec, predicted)
-        s_score = score_syntactic(predicted, reference)
-        csr = constraint_satisfaction_rate(spec, predicted)
-        ars = ambiguity_resolution_score(spec, predicted)
+    def evaluate(self, spec: IntentSpec, predicted: ToolCall, reference: ToolCall) -> EvalRecord:
+        from .evaluate import (
+            score_intent_alignment,
+            score_syntactic,
+            constraint_satisfaction_rate,
+            ambiguity_resolution_score,
+        )
         return EvalRecord(
             intent_spec=spec,
             predicted_call=predicted,
             reference_call=reference,
-            intent_score=i_score,
-            syntactic_score=s_score,
-            constraint_sat_rate=csr,
-            ambiguity_res_score=ars,
+            intent_score=score_intent_alignment(spec, predicted),
+            syntactic_score=score_syntactic(predicted, reference),
+            constraint_sat_rate=constraint_satisfaction_rate(spec, predicted),
+            ambiguity_res_score=ambiguity_resolution_score(spec, predicted),
         )
 
     def batch_evaluate(
@@ -98,7 +88,4 @@ class IntentEvaluator:
         predicteds: list[ToolCall],
         references: list[ToolCall],
     ) -> list[EvalRecord]:
-        return [
-            self.evaluate(s, p, r)
-            for s, p, r in zip(specs, predicteds, references)
-        ]
+        return [self.evaluate(s, p, r) for s, p, r in zip(specs, predicteds, references)]
