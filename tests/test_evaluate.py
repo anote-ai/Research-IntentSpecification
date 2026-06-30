@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
 from intentspec.execute import evaluate_solution, run_solution
 from intentspec.ivr import compute_ivr, compute_ivr_by_type
-from intentspec.schema import ConstraintTest, IVRResult, SpecPair, SolutionResult
+from intentspec.schema import ConstraintTest, SpecPair, SolutionResult
 
 
 # ---------------------------------------------------------------------------

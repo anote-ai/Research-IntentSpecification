@@ -14,12 +14,8 @@ Set ANTHROPIC_API_KEY in your environment before running.
 from __future__ import annotations
 
 import json
-import os
 import sys
 from pathlib import Path
-
-REPO_ROOT = Path(__file__).parent.parent
-sys.path.insert(0, str(REPO_ROOT / "src"))
 
 from intentspec.dataset import load_spec_pairs
 from intentspec.execute import evaluate_solution
@@ -27,6 +23,7 @@ from intentspec.generate import generate_solutions
 from intentspec.ivr import compute_ivr, compute_ivr_by_type
 from intentspec.schema import SolutionResult
 
+REPO_ROOT = Path(__file__).parent.parent
 SPECS_PATH = REPO_ROOT / "data" / "specs" / "spec_pairs.jsonl"
 CACHE_DIR = REPO_ROOT / "data" / "generations"
 RESULTS_DIR = REPO_ROOT / "results"
