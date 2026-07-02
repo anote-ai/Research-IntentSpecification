@@ -1,0 +1,333 @@
+{
+  "model": "claude-sonnet-4-6",
+  "n_solutions_per_spec": 5,
+  "overall_ivr": 0.31428571428571433,
+  "ivr_by_type": {
+    "algorithm": 0.31428571428571433
+  },
+  "per_task": {
+    "HumanEval/26": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      }
+    ],
+    "HumanEval/18": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2",
+          "C4"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": [
+          "C4"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2",
+          "C4"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2",
+          "C4"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": [
+          "C4"
+        ]
+      }
+    ],
+    "HumanEval/25": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      }
+    ],
+    "HumanEval/12": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": [
+          "C3"
+        ]
+      }
+    ],
+    "HumanEval/20": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": false,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": false,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      }
+    ],
+    "HumanEval/21": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      }
+    ],
+    "HumanEval/7": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      }
+    ]
+  }
+}
