@@ -21,6 +21,8 @@ env/
 
 # Jupyter
 .ipynb_checkpoints/
+scratch_notebook.ipynb
+scratch_notebook_2.ipynb
 
 # Generated / results (cache and outputs, not source)
 data/generations/

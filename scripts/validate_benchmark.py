@@ -14,11 +14,11 @@ import sys
 import textwrap
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent / "src"))
+sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 from intentspec.execute import run_solution  # noqa: E402
 
-REPO_ROOT = Path(__file__).parent
+REPO_ROOT = Path(__file__).parent.parent
 SPEC_PAIRS_PATH = REPO_ROOT / "data" / "specs" / "spec_pairs.jsonl"
 CANONICALS_PATH = REPO_ROOT / "data" / "specs" / "canonicals.jsonl"
 GOLD_REFS_DIR = REPO_ROOT / "gold_refs"
