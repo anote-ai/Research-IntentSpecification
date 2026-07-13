@@ -52,7 +52,7 @@ and dev tools (`pytest`, `ruff`, `mypy`) declared in `pyproject.toml`.
 > against the cached generations already committed to this repo (see below).
 
 ```bash
-export ANTHROPIC_API_KEY=sk-ant-...
+export ANTHROPIC_API_KEY=sk-ant-XXX
 ```
 
 ## Repository Structure
