@@ -5,9 +5,7 @@ Usage (from repo root):
     python scripts/plot_ivr_distribution.py [results/experiment1.json]
 
 Reads a results JSON produced by run_experiment1.py (model, per_task solution
-outcomes), recomputes per-task IVR, and plots:
-  1. A histogram of per-task IVR scores.
-  2. A bar chart of mean IVR by spec_type (with per-task points overlaid).
+outcomes), recomputes per-task IVR, and plots a histogram of per-task IVR scores.
 
 Saves the figure next to the input file as <name>_ivr_distribution.png.
 """
@@ -19,12 +17,10 @@ from pathlib import Path
 
 import matplotlib.pyplot as plt
 
-from intentspec.dataset import load_spec_pairs
 from intentspec.ivr import compute_ivr
 from intentspec.schema import SolutionResult
 
 REPO_ROOT = Path(__file__).parent.parent
-SPECS_PATH = REPO_ROOT / "data" / "specs" / "spec_pairs.jsonl"
 
 
 def load_per_task_ivr(results_path: Path) -> dict[str, float]:
@@ -60,39 +56,19 @@ def main() -> None:
         print("No tasks with passing-stated solutions found; nothing to plot.", file=sys.stderr)
         sys.exit(1)
 
-    task_to_type: dict[str, str] = {}
-    if SPECS_PATH.exists():
-        for spec_pair in load_spec_pairs(SPECS_PATH):
-            task_to_type[spec_pair.task_id] = spec_pair.spec_type
-
     scores = list(per_task_ivr.values())
-    by_type: dict[str, list[float]] = {}
-    for task_id, score in per_task_ivr.items():
-        stype = task_to_type.get(task_id, "unknown")
-        by_type.setdefault(stype, []).append(score)
 
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5))
+    fig, ax1 = plt.subplots(figsize=(7, 5))
 
     bins = [i / 10 for i in range(11)]
     ax1.hist(scores, bins=bins, edgecolor="black", color="#4C72B0")
-    ax1.set_xlabel("IVR score")
-    ax1.set_ylabel("Number of tasks")
+    ax1.set_xlabel("IVR Score")
+    ax1.set_ylabel("Number of Tasks")
     ax1.set_title(f"Distribution of per-task IVR (n={len(scores)})")
     ax1.axvline(sum(scores) / len(scores), color="red", linestyle="--", label=f"mean = {sum(scores) / len(scores):.2f}")
     ax1.legend()
 
-    types = sorted(by_type)
-    means = [sum(by_type[t]) / len(by_type[t]) for t in types]
-    ax2.bar(types, means, color="#55A868", alpha=0.7, label="mean IVR")
-    for i, t in enumerate(types):
-        jitter = [i + (j % 5 - 2) * 0.03 for j in range(len(by_type[t]))]
-        ax2.scatter(jitter, by_type[t], color="black", s=15, zorder=3, label="per-task IVR" if i == 0 else None)
-    ax2.set_ylabel("IVR score")
-    ax2.set_title("IVR by spec type")
-    ax2.set_ylim(0, 1)
-    ax2.legend()
-
-    fig.suptitle(f"Intent Violation Rate — {results_path.name}")
+    fig.suptitle("Intent Violation Rate")
     fig.tight_layout()
 
     out_path = results_path.parent / f"{results_path.stem}_ivr_distribution.png"
