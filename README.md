@@ -103,7 +103,7 @@ the cached solutions are reused.
   reported IVR of 54.5% exactly**, and does not require `ANTHROPIC_API_KEY`.
 - **If you delete or empty `data/generations/`, generation will run fresh**
   against the Anthropic API. Fresh generation calls the API at its default
-  temperature (1.0, nondeterministic) — a fresh run will **not** reproduce
+  temperature (1.0, nondeterministic). A fresh run will **not** reproduce
   54.5% exactly, since it draws a different sample of completions each time.
 
 To force fresh generation for reproducibility experiments of your own:
@@ -121,8 +121,8 @@ python scripts/validate_benchmark.py
 ```
 
 Takes no arguments. For every spec pair, it resolves a gold reference
-solution — from `gold_refs/<task_id>.py` if present, otherwise from
-`canonicals.jsonl` (aliasing `entry_point` to `solution`) — and runs it
+solution from `gold_refs/<task_id>.py` if present, otherwise from
+`canonicals.jsonl` (aliasing `entry_point` to `solution`), and runs it
 against every constraint test (stated **and** hidden). It confirms that
 correct, canonical solutions pass all constraints (IVR = 0 across all specs),
 which shows the hidden tests are satisfiable by correct code rather than
