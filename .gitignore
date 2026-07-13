@@ -13,6 +13,15 @@ build/
 venv/
 env/
 
+# Test / lint / type-check caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+
+# Jupyter
+.ipynb_checkpoints/
+
 # Generated / results (cache and outputs, not source)
 data/generations/
 results/
