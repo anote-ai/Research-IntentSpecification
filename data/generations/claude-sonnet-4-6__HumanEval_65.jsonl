@@ -1,0 +1,5 @@
+{"solution": "def solution(x, shift):\n    s = str(abs(x))\n    n = len(s)\n    if n == 0:\n        return s\n    shift = shift % n\n    rotated = s[-shift:] + s[:-shift] if shift else s\n    return rotated"}
+{"solution": "def solution(x, shift):\n    s = str(abs(x))\n    n = len(s)\n    if n == 0:\n        return s\n    shift = shift % n\n    rotated = s[-shift:] + s[:-shift] if shift else s\n    return rotated"}
+{"solution": "def solution(x, shift):\n    s = str(x)\n    n = len(s)\n    if n == 0:\n        return s\n    shift = shift % n if n > 0 else 0\n    return s[-shift:] + s[:-shift] if shift else s"}
+{"solution": "def solution(x, shift):\n    s = str(x)\n    if len(s) == 0:\n        return s\n    shift = shift % len(s) if len(s) > 0 else 0\n    return s[-shift:] + s[:-shift] if shift else s"}
+{"solution": "def solution(x, shift):\n    s = str(abs(x))\n    n = len(s)\n    if n == 0:\n        return s\n    shift = shift % n\n    rotated = s[-shift:] + s[:-shift] if shift else s\n    return rotated"}

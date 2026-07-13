@@ -1,0 +1,5 @@
+{"solution": "def solution(lst):\n    return [n for n in lst if all(int(d) % 2 != 0 for d in str(n))]"}
+{"solution": "def solution(numbers):\n    return [n for n in numbers if all(int(d) % 2 != 0 for d in str(n))]"}
+{"solution": "def solution(numbers):\n    return [n for n in numbers if all(int(d) % 2 != 0 for d in str(n))]"}
+{"solution": "def solution(lst):\n    return [n for n in lst if all(int(d) % 2 != 0 for d in str(n))]"}
+{"solution": "def solution(lst):\n    return [n for n in lst if all(int(d) % 2 != 0 for d in str(n))]"}

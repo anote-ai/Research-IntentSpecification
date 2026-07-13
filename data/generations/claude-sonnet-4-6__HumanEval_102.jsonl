@@ -1,0 +1,5 @@
+{"solution": "def solution(a, b):\n    start = min(a, b)\n    end = max(a, b)\n    for num in range(int(end), int(start) - 1, -1):\n        if num % 2 == 0:\n            return num\n    return None"}
+{"solution": "def solution(a, b):\n    start = min(a, b)\n    end = max(a, b)\n    for num in range(end, start - 1, -1):\n        if num % 2 == 0:\n            return num\n    return None"}
+{"solution": "def solution(a, b):\n    start = min(a, b)\n    end = max(a, b)\n    for num in range(end, start - 1, -1):\n        if num % 2 == 0:\n            return num\n    return None"}
+{"solution": "def solution(a, b):\n    start = min(a, b)\n    end = max(a, b)\n    for num in range(end, start - 1, -1):\n        if num % 2 == 0:\n            return num\n    return None"}
+{"solution": "def solution(a, b):\n    start = min(a, b)\n    end = max(a, b)\n    for num in range(end, start - 1, -1):\n        if num % 2 == 0:\n            return num\n    return None"}

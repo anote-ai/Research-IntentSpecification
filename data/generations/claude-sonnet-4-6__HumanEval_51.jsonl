@@ -1,0 +1,5 @@
+{"solution": "def solution(s):\n    vowels = \"aeiouAEIOU\"\n    return ''.join(char for char in s if char not in vowels)"}
+{"solution": "def solution(string):\n    vowels = \"aeiouAEIOU\"\n    return ''.join(char for char in string if char not in vowels)"}
+{"solution": "def solution(s):\n    vowels = \"aeiouAEIOU\"\n    return \"\".join(c for c in s if c not in vowels)"}
+{"solution": "def solution(s):\n    vowels = \"aeiouAEIOU\"\n    return ''.join(char for char in s if char not in vowels)"}
+{"solution": "def solution(s):\n    vowels = \"aeiouAEIOU\"\n    return ''.join(char for char in s if char not in vowels)"}

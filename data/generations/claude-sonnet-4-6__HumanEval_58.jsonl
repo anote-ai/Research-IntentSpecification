@@ -1,0 +1,5 @@
+{"solution": "def solution(list1, list2):\n    return [element for element in list1 if element in list2]"}
+{"solution": "def solution(list1, list2):\n    return [element for element in list1 if element in list2]"}
+{"solution": "def solution(list1, list2):\n    return list(set(list1) & set(list2))"}
+{"solution": "def solution(list1, list2):\n    return list(set(list1) & set(list2))"}
+{"solution": "def solution(list1, list2):\n    return [element for element in list1 if element in list2]"}

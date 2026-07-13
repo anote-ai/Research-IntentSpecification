@@ -1,0 +1,5 @@
+{"solution": "def solution(a, b):\n    even_digits = []\n    for num in range(a, b + 1):\n        for digit in str(num):\n            if int(digit) % 2 == 0:\n                even_digits.append(int(digit))\n    return even_digits"}
+{"solution": "def solution(a, b):\n    even_digits = []\n    for num in range(a, b + 1):\n        for digit in str(num):\n            d = int(digit)\n            if d % 2 == 0:\n                even_digits.append(d)\n    return even_digits"}
+{"solution": "def solution(a, b):\n    even_digits = []\n    for num in range(a, b + 1):\n        for digit in str(num):\n            if int(digit) % 2 == 0:\n                even_digits.append(int(digit))\n    return even_digits"}
+{"solution": "def solution(a, b):\n    even_digits = []\n    for num in range(a, b + 1):\n        for digit in str(num):\n            if int(digit) % 2 == 0:\n                even_digits.append(int(digit))\n    return even_digits"}
+{"solution": "def solution(a, b):\n    even_digits = []\n    for num in range(a, b + 1):\n        for digit in str(num):\n            if int(digit) % 2 == 0:\n                even_digits.append(int(digit))\n    return even_digits"}

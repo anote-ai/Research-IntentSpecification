@@ -1,0 +1,5 @@
+{"solution": "def solution(lst):\n    def digit_sum(n):\n        return sum(int(d) for d in str(abs(n)))\n    \n    return sorted(lst, key=digit_sum)"}
+{"solution": "def solution(lst):\n    def digit_sum(n):\n        return sum(int(d) for d in str(abs(n)))\n    \n    return sorted(lst, key=digit_sum)"}
+{"solution": "def solution(lst):\n    return sorted(lst, key=lambda x: sum(int(d) for d in str(abs(x))))"}
+{"solution": "def solution(lst):\n    return sorted(lst, key=lambda x: sum(int(d) for d in str(abs(x))))"}
+{"solution": "def solution(lst):\n    return sorted(lst, key=lambda x: sum(int(d) for d in str(abs(x))))"}

@@ -1,0 +1,5 @@
+{"solution": "def solution(a, b, c):\n    s = (a + b + c) / 2\n    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5\n    return area"}
+{"solution": "def solution(a, b, c):\n    s = (a + b + c) / 2\n    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5\n    return area"}
+{"solution": "def solution(a, b, c):\n    s = (a + b + c) / 2\n    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5\n    return area"}
+{"solution": "def solution(a, b, c):\n    s = (a + b + c) / 2\n    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5\n    return area"}
+{"solution": "def solution(a, b, c):\n    s = (a + b + c) / 2\n    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5\n    return area"}

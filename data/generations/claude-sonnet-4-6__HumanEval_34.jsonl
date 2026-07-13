@@ -1,0 +1,5 @@
+{"solution": "def solution(lst):\n    seen = set()\n    result = []\n    for item in lst:\n        if item not in seen:\n            seen.add(item)\n            result.append(item)\n    return result"}
+{"solution": "def solution(lst):\n    seen = set()\n    unique = []\n    for item in lst:\n        if item not in seen:\n            seen.add(item)\n            unique.append(item)\n    return unique"}
+{"solution": "def solution(lst):\n    seen = set()\n    unique = []\n    for item in lst:\n        if item not in seen:\n            seen.add(item)\n            unique.append(item)\n    return unique"}
+{"solution": "def solution(lst):\n    seen = set()\n    result = []\n    for item in lst:\n        if item not in seen:\n            seen.add(item)\n            result.append(item)\n    return result"}
+{"solution": "def solution(lst):\n    seen = set()\n    unique = []\n    for item in lst:\n        if item not in seen:\n            seen.add(item)\n            unique.append(item)\n    return unique"}

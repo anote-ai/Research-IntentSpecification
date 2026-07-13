@@ -1,0 +1,5 @@
+{"solution": "def solution(words):\n    return max(words, key=lambda word: len(set(word)))"}
+{"solution": "def solution(words):\n    return max(words, key=lambda word: len(set(word)))"}
+{"solution": "def solution(words):\n    return max(words, key=lambda word: len(set(word)))"}
+{"solution": "def solution(words):\n    return max(words, key=lambda word: len(set(word)))"}
+{"solution": "def solution(words):\n    return max(words, key=lambda word: len(set(word)))"}

@@ -1,0 +1,5 @@
+{"solution": "def solution(lst):\n    unique = list(set(lst))\n    unique.sort()\n    return unique[1]"}
+{"solution": "def solution(lst):\n    unique = sorted(set(lst))\n    return unique[1]"}
+{"solution": "def solution(lst):\n    unique_sorted = sorted(set(lst))\n    return unique_sorted[1]"}
+{"solution": "def solution(lst):\n    unique_sorted = sorted(set(lst))\n    return unique_sorted[1]"}
+{"solution": "def solution(lst):\n    unique_sorted = sorted(set(lst))\n    return unique_sorted[1]"}

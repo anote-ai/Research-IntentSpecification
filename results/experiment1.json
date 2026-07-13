@@ -1,0 +1,2191 @@
+{
+  "model": "claude-sonnet-4-6",
+  "n_solutions_per_spec": 5,
+  "overall_ivr": 0.5446808510638298,
+  "ivr_by_type": {
+    "algorithm": 0.5446808510638298
+  },
+  "per_task": {
+    "HumanEval/26": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      }
+    ],
+    "HumanEval/18": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      }
+    ],
+    "HumanEval/25": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      }
+    ],
+    "HumanEval/12": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": [
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": [
+          "C3"
+        ]
+      }
+    ],
+    "HumanEval/20": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      }
+    ],
+    "HumanEval/21": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      }
+    ],
+    "HumanEval/7": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      }
+    ],
+    "HumanEval/47": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      }
+    ],
+    "HumanEval/30": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      }
+    ],
+    "HumanEval/34": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2"
+        ]
+      }
+    ],
+    "HumanEval/51": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      }
+    ],
+    "HumanEval/57": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      }
+    ],
+    "HumanEval/58": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": [
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": [
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      }
+    ],
+    "HumanEval/42": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      }
+    ],
+    "HumanEval/65": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": [
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": [
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": [
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": [
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": [
+          "C3"
+        ]
+      }
+    ],
+    "HumanEval/68": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      }
+    ],
+    "HumanEval/70": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": []
+      }
+    ],
+    "HumanEval/72": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3",
+          "C4"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      }
+    ],
+    "HumanEval/74": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      }
+    ],
+    "HumanEval/64": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C4"
+        ],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C4"
+        ],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C4"
+        ],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C4"
+        ],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C4"
+        ],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      }
+    ],
+    "HumanEval/66": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      }
+    ],
+    "HumanEval/71": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      }
+    ],
+    "HumanEval/86": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      }
+    ],
+    "HumanEval/90": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": [
+          "C3",
+          "C4"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": [
+          "C3",
+          "C4"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": [
+          "C3",
+          "C4"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": [
+          "C3",
+          "C4"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": [
+          "C3",
+          "C4"
+        ]
+      }
+    ],
+    "HumanEval/95": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": [
+          "C4"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": [
+          "C4"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": [
+          "C4"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": [
+          "C4"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": [
+          "C4"
+        ]
+      }
+    ],
+    "HumanEval/98": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": []
+      }
+    ],
+    "HumanEval/99": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      }
+    ],
+    "HumanEval/102": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": [
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": [
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": [
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": [
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": [
+          "C3"
+        ]
+      }
+    ],
+    "HumanEval/104": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      }
+    ],
+    "HumanEval/108": [
+      {
+        "passes_stated": false,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": false,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": false,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": false,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      }
+    ],
+    "HumanEval/120": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      }
+    ],
+    "HumanEval/126": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C4"
+        ],
+        "failed_hidden": [
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C4"
+        ],
+        "failed_hidden": [
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C4"
+        ],
+        "failed_hidden": [
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C4"
+        ],
+        "failed_hidden": [
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C4"
+        ],
+        "failed_hidden": [
+          "C3"
+        ]
+      }
+    ],
+    "HumanEval/91": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      }
+    ],
+    "HumanEval/131": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": []
+      }
+    ],
+    "HumanEval/135": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2"
+        ],
+        "failed_hidden": []
+      }
+    ],
+    "HumanEval/136": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      }
+    ],
+    "HumanEval/140": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      }
+    ],
+    "HumanEval/149": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      }
+    ],
+    "HumanEval/151": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      }
+    ],
+    "HumanEval/158": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2"
+        ]
+      }
+    ],
+    "HumanEval/163": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      }
+    ],
+    "HumanEval/88": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      }
+    ],
+    "HumanEval/93": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      }
+    ],
+    "HumanEval/101": [
+      {
+        "passes_stated": false,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": false,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": false,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": false,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": false,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      }
+    ],
+    "HumanEval/105": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C2",
+          "C3"
+        ],
+        "failed_hidden": []
+      }
+    ],
+    "HumanEval/111": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      }
+    ],
+    "HumanEval/112": [
+      {
+        "passes_stated": false,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": false,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": false,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": false,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "passes_stated": false,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2",
+          "C3"
+        ]
+      }
+    ],
+    "HumanEval/145": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [
+          "C3"
+        ],
+        "failed_hidden": [
+          "C2"
+        ]
+      }
+    ],
+    "HumanEval/161": [
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2"
+        ]
+      },
+      {
+        "passes_stated": true,
+        "passed_hidden": [],
+        "failed_hidden": [
+          "C2"
+        ]
+      }
+    ]
+  }
+}

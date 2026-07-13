@@ -1,0 +1,5 @@
+{"solution": "def solution(lst):\n    from collections import Counter\n    counts = Counter(lst)\n    return [x for x in lst if counts[x] == 1]"}
+{"solution": "def solution(lst):\n    from collections import Counter\n    counts = Counter(lst)\n    return [x for x in lst if counts[x] == 1]"}
+{"solution": "def solution(lst):\n    from collections import Counter\n    counts = Counter(lst)\n    return [x for x in lst if counts[x] == 1]"}
+{"solution": "def solution(lst):\n    from collections import Counter\n    counts = Counter(lst)\n    return [x for x in lst if counts[x] == 1]"}
+{"solution": "def solution(lst):\n    from collections import Counter\n    counts = Counter(lst)\n    return [x for x in lst if counts[x] == 1]"}

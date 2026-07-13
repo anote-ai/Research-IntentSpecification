@@ -1,0 +1,5 @@
+{"solution": "def solution(list1, list2):\n    total1 = sum(len(s) for s in list1)\n    total2 = sum(len(s) for s in list2)\n    return list1 if total1 <= total2 else list2"}
+{"solution": "def solution(list1, list2):\n    total1 = sum(len(s) for s in list1)\n    total2 = sum(len(s) for s in list2)\n    return list1 if total1 <= total2 else list2"}
+{"solution": "def solution(list1, list2):\n    total1 = sum(len(s) for s in list1)\n    total2 = sum(len(s) for s in list2)\n    return list1 if total1 <= total2 else list2"}
+{"solution": "def solution(list1, list2):\n    total1 = sum(len(s) for s in list1)\n    total2 = sum(len(s) for s in list2)\n    return list1 if total1 <= total2 else list2"}
+{"solution": "def solution(list1, list2):\n    total1 = sum(len(s) for s in list1)\n    total2 = sum(len(s) for s in list2)\n    return list1 if total1 <= total2 else list2"}

@@ -1,0 +1,5 @@
+{"solution": "def solution(value):\n    from decimal import Decimal, ROUND_HALF_UP\n    d = Decimal(value)\n    return int(d.quantize(Decimal('1'), rounding=ROUND_HALF_UP))"}
+{"solution": "def solution(value):\n    from decimal import Decimal, ROUND_HALF_UP\n    d = Decimal(value)\n    return int(d.quantize(Decimal('1'), rounding=ROUND_HALF_UP))"}
+{"solution": "def solution(value):\n    from decimal import Decimal, ROUND_HALF_UP\n    d = Decimal(value)\n    return int(d.quantize(Decimal('1'), rounding=ROUND_HALF_UP))"}
+{"solution": "def solution(value):\n    from decimal import Decimal, ROUND_HALF_UP\n    d = Decimal(value)\n    return int(d.quantize(Decimal('1'), rounding=ROUND_HALF_UP))"}
+{"solution": "def solution(value):\n    from decimal import Decimal, ROUND_HALF_UP\n    d = Decimal(value)\n    return int(d.quantize(Decimal('1'), rounding=ROUND_HALF_UP))"}

@@ -1,0 +1,5 @@
+{"solution": "def solution(s):\n    return sum(1 for c in s if c.lower() in 'aeiou')"}
+{"solution": "def solution(s):\n    return sum(1 for c in s.lower() if c in 'aeiou')"}
+{"solution": "def solution(s):\n    return sum(1 for c in s.lower() if c in 'aeiou')"}
+{"solution": "def solution(s):\n    return sum(1 for c in s.lower() if c in 'aeiou')"}
+{"solution": "def solution(s):\n    return sum(1 for c in s.lower() if c in 'aeiou')"}

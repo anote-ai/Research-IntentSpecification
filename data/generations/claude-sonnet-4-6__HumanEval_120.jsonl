@@ -1,0 +1,5 @@
+{"solution": "def solution(arr, k):\n    return sorted(sorted(arr, reverse=True)[:k])"}
+{"solution": "def solution(arr, k):\n    return sorted(sorted(arr, reverse=True)[:k])"}
+{"solution": "def solution(arr, k):\n    return sorted(sorted(arr, reverse=True)[:k])"}
+{"solution": "def solution(arr, k):\n    return sorted(sorted(arr, reverse=True)[:k])"}
+{"solution": "def solution(arr, k):\n    return sorted(sorted(arr, reverse=True)[:k])"}

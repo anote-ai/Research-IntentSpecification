@@ -1,0 +1,5 @@
+{"solution": "def solution(s):\n    vowels = 'AEIOU'\n    return sum(1 for i, c in enumerate(s) if i % 2 == 0 and c in vowels)"}
+{"solution": "def solution(s):\n    vowels = 'AEIOU'\n    return sum(1 for i, c in enumerate(s) if i % 2 == 0 and c in vowels)"}
+{"solution": "def solution(s):\n    vowels = 'AEIOU'\n    return sum(1 for i, c in enumerate(s) if i % 2 == 0 and c in vowels)"}
+{"solution": "def solution(s):\n    vowels = 'AEIOU'\n    return sum(1 for i, c in enumerate(s) if i % 2 == 0 and c in vowels)"}
+{"solution": "def solution(s):\n    vowels = set('AEIOU')\n    return sum(1 for i, c in enumerate(s) if i % 2 == 0 and c in vowels)"}

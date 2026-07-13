@@ -1,0 +1,5 @@
+{"solution": "def solution(strings):\n    even_strings = [s for s in strings if len(s) % 2 == 0]\n    return sorted(even_strings, key=len)"}
+{"solution": "def solution(strings):\n    even_strings = [s for s in strings if len(s) % 2 == 0]\n    return sorted(even_strings, key=len)"}
+{"solution": "def solution(strings):\n    even_strings = [s for s in strings if len(s) % 2 == 0]\n    return sorted(even_strings, key=len)"}
+{"solution": "def solution(strings):\n    filtered = [s for s in strings if len(s) % 2 == 0]\n    return sorted(filtered, key=len)"}
+{"solution": "def solution(lst):\n    even_strings = [s for s in lst if len(s) % 2 == 0]\n    return sorted(even_strings, key=len)"}

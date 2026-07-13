@@ -1,0 +1,5 @@
+{"solution": "def solution(s):\n    return sum(ord(c) for c in s)"}
+{"solution": "def solution(s):\n    return sum(ord(c) for c in s)"}
+{"solution": "def solution(s):\n    return sum(ord(c) for c in s)"}
+{"solution": "def solution(s):\n    return sum(ord(c) for c in s)"}
+{"solution": "def solution(s):\n    return sum(ord(c) for c in s)"}

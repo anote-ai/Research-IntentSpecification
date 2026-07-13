@@ -1,0 +1,5 @@
+{"solution": "def solution(numbers):\n    return numbers == sorted(numbers)"}
+{"solution": "def solution(numbers):\n    return numbers == sorted(numbers)"}
+{"solution": "def solution(numbers):\n    return numbers == sorted(numbers)"}
+{"solution": "def solution(numbers):\n    return numbers == sorted(numbers)"}
+{"solution": "def solution(numbers):\n    return numbers == sorted(numbers)"}

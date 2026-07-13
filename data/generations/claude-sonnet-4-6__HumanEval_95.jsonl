@@ -1,0 +1,5 @@
+{"solution": "def solution(dictionary):\n    if not dictionary:\n        return True\n    keys = [str(k) for k in dictionary.keys()]\n    return all(k.islower() for k in keys) or all(k.isupper() for k in keys)"}
+{"solution": "def solution(d):\n    keys = list(d.keys())\n    if not keys:\n        return True\n    return all(k == k.lower() for k in keys) or all(k == k.upper() for k in keys)"}
+{"solution": "def solution(dictionary):\n    if not dictionary:\n        return True\n    keys = list(dictionary.keys())\n    return all(k.islower() for k in keys) or all(k.isupper() for k in keys)"}
+{"solution": "def solution(d):\n    keys = list(d.keys())\n    return all(k.islower() for k in keys) or all(k.isupper() for k in keys)"}
+{"solution": "def solution(d):\n    keys = list(d.keys())\n    if not keys:\n        return True\n    return all(k == k.lower() for k in keys) or all(k == k.upper() for k in keys)"}
