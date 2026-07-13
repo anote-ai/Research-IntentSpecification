@@ -33,7 +33,7 @@ def _clean_solution_code(raw: str) -> str:
     """Strip markdown code fences from LLM-generated code."""
     if "```" in raw:
         lines = raw.split("\n")
-        lines = [l for l in lines if not l.strip().startswith("```")]
+        lines = [line for line in lines if not line.strip().startswith("```")]
         return "\n".join(lines).strip()
     return raw.strip()
 
@@ -67,7 +67,10 @@ def _call_openai(prompt: str, model: str) -> str:
         max_tokens=1024,
         messages=[{"role": "user", "content": prompt}],
     )
-    return response.choices[0].message.content  # type: ignore[union-attr]
+    content = response.choices[0].message.content
+    if content is None:
+        raise ValueError("OpenAI response contained no content")
+    return content
 
 
 _PROVIDER_DISPATCH = {
